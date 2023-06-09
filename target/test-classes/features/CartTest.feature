@@ -1,5 +1,5 @@
 Feature: Verify Cart Functionality
-
+@smoke
   Scenario: Verify user can add multiple item the cart
     Given user open website
     Then verify user is on login page

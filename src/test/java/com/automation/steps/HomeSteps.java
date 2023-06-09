@@ -32,4 +32,19 @@ public class HomeSteps {
     public void clickOnLogoutLink() {
         homePage.clickOnLogoutLink();
     }
+
+    @Then("user can choose Price-high to low")
+    public void userCanChoosePriceHighToLow() {
+        homePage.sortPriceHighToLow();
+    }
+
+    @When("user click on filter drop down menu")
+    public void userClickOnFilterDropDownMenu() {
+       homePage.clickOnFilterIcon();
+    }
+
+    @And("verify user can sort the items by price -high to low")
+    public void verifyUserCanSortTheItemsByPriceHighToLow() {
+        homePage.verifyPriceHighToLow();
+    }
 }

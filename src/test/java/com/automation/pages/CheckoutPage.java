@@ -19,6 +19,9 @@ public class CheckoutPage extends BasePage {
     @FindBy(id = "continue")
     WebElement continueBtn;
 
+    @FindBy(id = "cancel")
+    WebElement cancelBtn;
+
     @FindBy(xpath = "//span[@class='title']")
     WebElement title;
 
@@ -33,6 +36,10 @@ public class CheckoutPage extends BasePage {
 
     public void clickOnContinueBtn() {
         continueBtn.click();
+    }
+
+    public void clickOnCancelBtn() {
+        cancelBtn.click();
     }
 
     public void verifyUserOnCheckoutPage(){

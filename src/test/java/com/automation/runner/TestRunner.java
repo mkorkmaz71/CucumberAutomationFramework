@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src//test//resources//features//",// for one write file name Login.feature
         glue="com.automation.steps",
-        tags = "@regression",
+        //tags = "@smoke",
         plugin = {"html:target/report.html","json:target/cucumber.json"}
 )
 public class TestRunner {

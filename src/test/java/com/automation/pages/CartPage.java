@@ -38,7 +38,7 @@ public class CartPage extends BasePage {
     }
 
     public void verifyCartPageIsEmpty() {
-        Assert.assertTrue(itemList.size() == 0);
+        Assert.assertEquals(0, itemList.size());
     }
 
     public void clickOnContinueShoppingButton() {
